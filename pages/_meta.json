@@ -1,7 +1,15 @@
 {
   "index": "Introduction",
   "another": "Another Page",
+  "a": {
+    "type": "separator",
+    "title": "Separator2"
+  },
   "advanced": "Advanced (A Folder)",
+  "--": {
+    "type": "separator",
+    "title": "Separator"
+  },
   "about": {
     "title": "About",
     "type": "page"
@@ -25,5 +33,5 @@
         "href": "mailto:hi@example.com"
       }
     }
-  }  
+  }
 }
