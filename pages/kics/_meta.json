@@ -1,8 +1,8 @@
 {
-  "satori": {
-    "title": "Satori 1"
+  "01-intro": {
+    "title": "I. 총칙"
   }
-  ,"advanced2": {
-     "title": "Advance Second Page"
+  ,"02-valuation": {
+     "title": "II. 자산 공정가치평가"
   }
 }
