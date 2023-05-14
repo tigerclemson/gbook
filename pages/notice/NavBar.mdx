@@ -1,0 +1,103 @@
+import { Callout, Tab, Tabs, Card, Cards, Collapse, Steps } from 'nextra-theme-docs'
+
+# NavBar 구조
+
+## No Meta file
+1. pages 폴더 아래에 있는 모든 mdx  는 page 로 렌더링된다.
+2. _meta.json 파일이 폴더내에 존재하지 않으면 파일이름 알파벳 순서로 sidebar 를 구성
+
+![SidebarNoMeta](/SidebarNoMeta.jpg  'No Meta in pages')
+
+
+3. index 페이지가 두번째 나온다?
+
+
+## With Meta File
+2. _meta.json 이 있으면 화면에 조회조건을 조정할 수 있다.
+
+![Meta](/metaFileInFolder.jpg  'No Meta in pages')
+
+
+```json filename="/_meta.json" /page/ /hidden/
+{
+  "index": {
+    "title": "Introduction"
+    ,"type": "page"
+  }
+  ,"another": {
+     "title": "❓ Another Page"
+    ,"type": "page"
+    ,"display" : "hidden"
+  }
+  ,"advanced": {
+     "title": "Advanced"
+    ,"type": "page"
+    ,"display" : "hidden"
+  }
+  ,"notice": {
+     "title": "Notices"
+    ,"type": "page"
+  }
+  ,"about": {
+    "title": "About"
+    ,"type": "page"
+  }
+  ,"Reference": {
+    "title": "References",
+    "type": "menu",
+    "items": {
+      "another": {
+        "title": "IFRS17",
+        "href": "/another/aaa"
+      },
+      "advanced": {
+        "title": "KICS ↗",
+        "href": "/advanced/satori"
+      }
+    }
+  }
+}
+
+
+```
+
+
+- 메타 파일을 등록하면 url ( 파일이름) 과 화면에서 조회되는 이름(title)을 구분할수 있다.
+- title 에 화면에 표시할 이름을 지정할 수 있다.
+- 메타 파일에 등록되는 순서대로 위치가 조정된다. ( 예시에서는 index > another > advanced > notice > about > Reference)
+- type 을 page 로 설정하면 navBar 에 등록됨
+- type 을 menu 로 설정하여 sub menu 를 추가할 수 있다.
+
+- display : hidden 을 설정하면 nabBar 나 sideBar 에서 표시가 되지 않는다. url 로 조회는 가능함.
+
+<Callout type="warning" emoji="">
+  display : hidden 을 설정하지 않으면 서브 메뉴로 등록한 link 를 이용하는 경우 해당 폴더의 내용뿐만아니라
+  전체 폴더 구조를 모두 탐색하여 sidebar 에 목록이 나타남.!!!
+</Callout>
+
+<Callout type="error" emoji="">
+   - 서브 폴더 이름으로 url 을 생성할 경우 폴더이름과 같은  mdx 로 처리하는 경우가 있음. (gatsby 와 동일 )
+   - navbar 에 등록되는 페이지, 메뉴에서는 url 을 지정할 수 있으므로 굳이 추가로 mdx 를 작성할 필요는 없음.
+   오히려 추가하는 경우 이상한 현상이 발생함.!!!!! ( 최상위 폴더에서는 url 을 위해 별도 파일 생성하지 않음.)
+</Callout>
+
+### 적용결과
+![Meta](/navBar.jpg  'No Meta in pages')
+
+
+## Sub folder
+
+3. Sub folder 에서도 동일한 로직이 적용됨
+
+```json filename="/advanced/_meta.json"
+{
+  "satori": {
+    "title": "Satori 1"
+  }
+  ,"advanced2": {
+     "title": "Advance Second Page"
+  }
+}
+```
+
+4. 폴더내의 satori.mdx 파일이 sidebar 에서는 "Satori 1" 로 표시되며 위치는 첫번째임.

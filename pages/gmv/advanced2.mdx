@@ -1,0 +1,152 @@
+import { useState } from 'react'
+import { Callout, Tab, Tabs, Card, Cards, Collapse, Steps } from 'nextra-theme-docs'
+import styles from '../../components/counters.module.css'
+import Image from 'next/image'
+
+
+# Advanced
+
+This is the index page for the Advanced folder!
+
+
+
+
+{/* Import CSS modules */}
+
+export const Counter = () => {
+  const [count, setCount] = useState(0);
+  return (
+    <div>
+      <button onClick={() => setCount(count + 1)} className={styles.counter}>Clicked {count} times</button>
+    </div>
+  );
+};
+
+<Counter/>
+
+Inlined syntax highlighting is also supported `let x = 1{:jsx}` via:
+
+```js filename="제목" copy
+console.log('hello, world')
+```
+
+## External Component
+
+import Counters from '../../components/counters'
+
+<Counters />
+## Callout
+
+<Callout emoji="👾">
+  **Space Invaders** is a 1978 shoot 'em up arcade game developed by Tomohiro
+  Nishikado.
+</Callout>
+
+<Callout type="warning" emoji="👾">
+  **Space Invaders** is a 1978 shoot 'em up arcade game developed by Tomohiro
+  Nishikado.
+</Callout>
+
+<Callout type="info" emoji="👾">
+  **Space Invaders** is a 1978 shoot 'em up arcade game developed by Tomohiro
+  Nishikado.
+</Callout>
+
+<Callout type="error" emoji="👾">
+  **Space Invaders** is a 1978 shoot 'em up arcade game developed by Tomohiro
+  Nishikado.
+</Callout>
+
+## Steps[#a]
+
+<Steps>
+
+### Step 1
+
+Contents for step 1.
+
+### Step 2
+
+Contents for step 2.
+
+</Steps>
+
+
+## Image
+### Image in MDX
+![esg](../../public/esg.png 'ESG')
+
+#### aaaa
+##### bbbbb
+
+### Image with Tag
+
+<Image src="/esg.png" alt="Hello" width={500} height={500} />
+
+## Collapse
+
+<Collapse >
+  asdfasdfas
+</Collapse>
+
+## Link
+
+Click [here](/about) to read more.
+
+## Card
+    <Card title="Title" >
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
+            numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+
+    </Card>
+
+## Tab
+<Tabs items={['pnpm', 'npm', 'yarn']} defaultIndex = '2'>
+  <Tab>
+    **pNPM**: Fast, disk space efficient package manager.
+  </Tab>
+  <Tab>
+    **npm** is a package manager for the JavaScript programming language.
+  </Tab>
+  <Tab>
+    **Yarn** is a software packaging system.
+  </Tab>
+</Tabs>
+
+
+## Table
+| left   | center | right |
+| :----- | :----: | ----: |
+| foo    |  bar   |   baz |
+| banana | apple  |  kiwi |
+| foo    |  bar   |   baz |
+| foo    |  bar   |   baz |
+
+
+| abc | def |
+| --- | --- |
+
+
+| abc | def |
+| --- | --- |
+| bar |
+| bar | baz | boo |
+
+
+| abc | def |
+| --- |
+| bar |
+
+
+| abc | def |
+| --- | --- |
+| bar | baz |
+bar
+
+bar
+
+
+| abc | defghi |
+:-: | -----------:
+bar | baz

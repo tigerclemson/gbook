@@ -1,36 +1,49 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "a": {
-    "type": "separator",
-    "title": "Separator2"
-  },
-  "advanced": "Advanced (A Folder)",
-  "--": {
-    "type": "separator",
-    "title": "Separator"
-  },
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
-  "contact": {
-    "title": "Contact ↗",
-    "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
-  },
-  "company": {
-    "title": "Company",
+  "index": {
+    "title": "Introduction"
+    ,"type": "page"
+  }
+  ,"about": {
+    "title": "About"
+    ,"type": "page"
+  }
+
+  ,"notice": {
+     "title": "Notices"
+    ,"type": "page"
+  }
+
+  ,"ifrs": {
+     "title": "IFRS"
+    ,"type": "page"
+    ,"display" : "hidden"
+  }
+  ,"kics": {
+     "title": "KICS"
+    ,"type": "page"
+    ,"display" : "hidden"
+  }
+  ,"gmv": {
+     "title": "GMV"
+    ,"type": "page"
+    ,"display" : "hidden"
+  }
+
+  ,"Reference": {
+    "title": "References",
     "type": "menu",
     "items": {
-      "about": {
-        "title": "About",
-        "href": "/about"
+      "ifrs": {
+        "title": "IFRS17",
+        "href": "/ifrs/01"
       },
-      "contact": {
-        "title": "Contact Us ↗",
-        "href": "mailto:hi@example.com"
+      "kics": {
+        "title": "KICS ↗",
+        "href": "/kics/satori"
+      },
+      "gmv": {
+        "title": "GMV",
+        "href": "/gmv/satori"
       }
     }
   }
