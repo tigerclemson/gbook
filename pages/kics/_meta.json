@@ -3,6 +3,18 @@
     "title": "I. 총칙"
   }
   ,"02-valuation": {
-     "title": "II. 자산 공정가치평가"
+     "title": "II. 자산 및 부채 평가"
+  }
+  ,"03-ac": {
+     "title": "III. 지급여력금액산출"
+  }
+  ,"04-scr": {
+     "title": "IV. 지급여력기준금액산출"
+  }
+  ,"05-doc": {
+     "title": "V. 문서화 요건"
+  }
+  ,"06-trans": {
+     "title": "VI. 경과조치"
   }
 }
