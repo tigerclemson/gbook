@@ -1,18 +1,26 @@
 ---
 title: "II.2-2. 할인율 산출기준"
-order: 2
 ---
 import { Callout,  Collapse, Steps } from 'nextra-theme-docs'
 import {Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel}  from '../../../../components/prime'
-
+import OverlayDemo  from '../../../../components/overlayDemo'
 
 
 ## 가. 무위험 금리기간구조
----
 “2-3.가.”, “2-3.다.”, “2-4.가.” 및 “2-4.나.”에서 사용하는 무위험 금리기간구조는 다음의 기준에 따라 산출한다.
 
+<OverlayDemo label="2-3.가." contents ="현금 및 예치금"/><OverlayDemo label="2-3.다." contents ="대출채권"/><OverlayDemo label="2-4.가." contents ="금융부채"/>및<OverlayDemo label="2-4.나." contents ="우발부채"/> 에서 사용하는 무위험 금리기간구조는 다음의 기준에 따라 산출한다.
+
+
+### (1) 원화 무위험 금리기간구조
+원화 무위험 금리기간구조는 시장에서 관찰되는 최장만기까지의 국고채 수익률을 Smith- Wilson 보간법으로 추정한 수익률 곡선을 사용하여 산출하며, 금융감독원장(이하 ‘감독원장’)이 제시한다.
+
+### (2) 외화 무위험 금리기간구조
+외화 무위험 금리기간구조는 감독원장이 제시한 해외통화의 최장만기까지의 무위험금리를 Smith-Wilson 보간법으로 추정한 수익률 곡선을 사용하여 산출한다.
+  1. 감독원장이 제시하지 않은 해외통화의 경우 원화 무위험 금리기간구조를 적용한다. 다만, [**<u>감독원장이 제시하지 않는 해외통화에 대해 보험회사가 자체적으로 산출한 해외통화 무위험 금리기간구조 사용의 적정성을 입증할 경우, 산출기준 및 산출과정 등을 문서화</u>**]()하여 사용할 수 있다.
+
 <Accordion multiple activeIndex={[]}>
-<AccordionTab title="자산평가를 위한 무위험 금리기간구조">
+<AccordionTab header="자산평가를 위한 무위험 금리기간구조">
 
 자산의 공정가치는 시장가격에 기반하여야 하므로, 자산평가를 위한 무위험 금리기간구조는 시장에서 관찰되는 최장만기 금리를 그대로 사용하며, 시장금리가 없는 만기에 대해서만 보간하여 사용함.
 - 예를 들어 원화통화(KRW)의 경우, 자산평가를 위한 무위험 금리기간구조는 기초자산 (국고채) 중 최장만기인 국고채 50년물까지의 금리를 Smith-Wilson 방식으로 보간한 수익률 곡선을 사용.
@@ -21,17 +29,12 @@ import {Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, Overlay
 </AccordionTab>
 </Accordion>
 
-### (1) 원화 무위험 금리기간구조
-원화 무위험 금리기간구조는 시장에서 관찰되는 최장만기까지의 국고채 수익률을 Smith- Wilson 보간법으로 추정한 수익률 곡선을 사용하여 산출하며, 금융감독원장(이하 ‘감독원장’)이 제시한다.
-### (2) 외화 무위험 금리기간구조
-외화 무위험 금리기간구조는 감독원장이 제시한 해외통화의 최장만기까지의 무위험금리를 Smith-Wilson 보간법으로 추정한 수익률 곡선을 사용하여 산출한다.
-  1. 감독원장이 제시하지 않은 해외통화의 경우 원화 무위험 금리기간구조를 적용한다. 다만, [**<u>감독원장이 제시하지 않는 해외통화에 대해 보험회사가 자체적으로 산출한 해외통화 무위험 금리기간구조 사용의 적정성을 입증할 경우, 산출기준 및 산출과정 등을 문서화</u>**](../../../05-doc/index)하여 사용할 수 있다.
-
 ## 나. 위험스프레드
----
- “2-3.가.”, “2-3.다.” 및 “2-4.가”에서 사용하는 위험스프레드는 다음의 기준에 따라 산출한다.
+<OverlayDemo label="2-3.가." contents ="현금 및 예치금"/><OverlayDemo label="2-3.다." contents ="대출채권"/><OverlayDemo label="2-4.가." contents ="금융부채"/> **에서 사용하는 위험스프레드는 다음의 기준에 따라 산출한다.**
+
 ### (1) 정의
 위험스프레드는 해당 자산·부채의 시장수익률과 동일 만기의 국채수익률의 차이로 계산한다.
+
 ### (2) 산출방법
 시장수익률이 없는 자산의 위험스프레드는 거래상대방의 신용등급 및 잔존만기에 해당하는 회사채수익률과 국채수익률의 차이로 계산하며, 다음의 세부 산출방법을 적용한다.
 
@@ -51,7 +54,7 @@ import {Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, Overlay
 | **ㅂ.** | 금융투자협회에서 제공하는 채권시가평가기준수익률(민평평균)을 적용할 수 없는 경우 | 보험회사가 합리적인 기준에 따라 회사채수익률에 대한 적용기준을 마련하여야 하며, 설정근거 등을 문서화 |
 
 <Accordion multiple activeIndex={[]}>
-<AccordionTab title="위험스프레드 산출 예시">
+<AccordionTab header="위험스프레드 산출 예시">
 
 ![image](https://user-images.githubusercontent.com/67420397/235571778-6958e76d-82cf-45b5-999d-8d597d7128ba.png)
 </AccordionTab>
@@ -67,12 +70,11 @@ import {Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, Overlay
 | **ㄱ.** | 예치금 | 금융기관채 중 BBB0등급의 무보증 회사채수익률 |
 | **ㄴ.** | 일반대출 및 기타대출 | 공모사채 중 BBB0등급의 무보증 회사채수익률 |
 | **ㄴ.** | 부동산담보대출 | A0등급의 무보증 회사채수익률 |
-| **ㄷ.** | 특수금융 | 매입수익률(실행 당시 대출금리)을 기준으로 만기에 대응하는 회사채 수익률을 매핑(Mapping) |
-| **ㄷ.** |  | (다만, 매입 이후 특수금융의 신용위험 변동을 확인한 경우 이를 회사채수익률에 반영하여야 한다.) |
+| **ㄷ.** | 특수금융 | 매입수익률(실행 당시 대출금리)을 기준으로 만기에 대응하는 회사채 수익률을 매핑(Mapping) <sub>  (다만, 매입 이후 특수금융의 신용위험 변동을 확인한 경우 이를 회사채수익률에 반영하여야 한다.) </sub>  |
 
 
 <Accordion multiple activeIndex={[]}>
-<AccordionTab title="매입수익률 매핑 예시">
+<AccordionTab header="매입수익률 매핑 예시">
 
 ![image](https://user-images.githubusercontent.com/67420397/236624093-87eb5424-a993-48e8-8861-d1c01e41ae47.png)
 </AccordionTab>
@@ -82,13 +84,15 @@ import {Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, Overlay
 
 ⑤ 거래상대방의 잔존만기에 대응하는 회사채수익률을 관찰할 수 없는 경우 회사채수익률을 보외하여 사용한다.
 
-<AccordionTab title="잔존만기에 대응하는 회사채수익률을 관찰할 수 없는 경우의 추정방법(예시)">
+<Accordion multiple activeIndex={[]}>
+<AccordionTab header="잔존만기에 대응하는 회사채수익률을 관찰할 수 없는 경우의 추정방법(예시)">
 
 ![image](https://user-images.githubusercontent.com/67420397/236624372-9a306892-d72d-412b-8cd1-6ce0f255290d.png)
 </AccordionTab>
+</Accordion>
 
 </Card>
 
 
 ### (3) 시장수익률이 없는 부채의 위험스프레드
-시장수익률이 없는 부채의 위험스프레드는 보험회사의 신용등급 및 잔존만기에 해당하는 회사채 수익률과 국채수익률의 차이로 계산한다. 이때, 세부 산출방법은 “(2)”의 기준을 준용한다.
+시장수익률이 없는 부채의 위험스프레드는 보험회사의 신용등급 및 잔존만기에 해당하는 회사채 수익률과 국채수익률의 차이로 계산한다. 이때, 세부 산출방법은 [(2) 산출방법](#2-산출방법)의 기준을 준용한다.
