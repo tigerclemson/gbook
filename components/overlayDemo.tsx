@@ -23,46 +23,34 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function OverlayDemo(prop) {
     const op = useRef(null);
-    
+
     console.log(prop.id);
-    
-    const { data, error } = useSWR('/data/test.json', fetcher);
-    
-    // const datas = require('/public/data/ KICS-INDEX.json')
-//     const jsonDirectory = path.join(process.cwd(), 'json');
-//   //Read the json data file data.json
-//   const fileContents = await fs.readFile(jsonDirectory + '/data/KICS-INDEX.json', 'utf8');
 
-// const data = fetch('/data/test.json').then((res) => res.json());
+    const { data, error } = useSWR('/data/KICS-INDEX.json', fetcher);
 
-//   const zzz  = data?.find( (aaa) => aaa.ID === prop.id);
-
-// console.log('aaa :' + zzz); 
-
-  
-const title  = data?.filter( (aaa) => aaa.title === prop.title)
-                     .map( (aaa) => (aaa.title + ' ('+ aaa.ID + ')')
-                                // {
-                                //     return aaa.title + ' ('+ aaa.ID + ')';
-                                // }
+// filter -> find
+const title  = data?.filter( (aaa) => aaa.id === prop.id)
+                     .map( (aaa) => (aaa.name + ' ('+ aaa.desc + ')')
                         )
                     ;
-// var level =[]
-const level  = data?.filter( (aaa) => aaa.title === prop.title)
-                    .map( function(element, index, array)  {
-                            // console.log('bbb :' + element.title);
-                             return  element.level;
-                        }
-                    )    
+// var desc =[]
+const desc = data?.filter((aaa) => aaa.id === prop.id)
+                     .map(function (element, index, array) {
+                       console.log('bbb :' + element.ID);
+                       if (element.LEVEL3) {
+                         return element.LEVEL1 + ' > ' + element.LEVEL2 + ' > ' + element.LEVEL3;
+                       }
+                       return element.LEVEL1 + ' > ' + element.LEVEL2;
+                     }
+                   )
                    ;
-// console.log('ccc :' + level) ;                
-// useEffect(() => {
-// console.log(xxx);
-// return () => {
-//     console.log(xxx[0]);
-// };
-// }, []);
+// console.log('ccc :' + desc) ;
 
+const url  = data?.filter( (aaa) => aaa.id === prop.id)
+                     .map( (aaa) => (aaa.url))
+                    ;
+
+console.log('url :' + url) ;
 
     return (
         <>
@@ -70,7 +58,7 @@ const level  = data?.filter( (aaa) => aaa.title === prop.title)
                     label= {title} style ={{padding : '0px 10px'}}
                     onMouseEnter={(e) => op.current.toggle(e)} onMouseLeave ={(e) => op.current.toggle(e)} />
             <OverlayPanel ref={op}>
-                {level}
+                {desc}
             </OverlayPanel>
     </>
     );
