@@ -44,19 +44,18 @@ const title  = data?.filter( (aaa) => aaa.title === prop.title)
                      .map( (aaa) => (aaa.title + ' ('+ aaa.ID + ')')
                                 // {
                                 //     return aaa.title + ' ('+ aaa.ID + ')';
-
                                 // }
                         )
                     ;
 // var level =[]
 const level  = data?.filter( (aaa) => aaa.title === prop.title)
                     .map( function(element, index, array)  {
-                            console.log('bbb :' + element.title);
+                            // console.log('bbb :' + element.title);
                              return  element.level;
                         }
                     )    
                    ;
-console.log('ccc :' + level) ;                
+// console.log('ccc :' + level) ;                
 // useEffect(() => {
 // console.log(xxx);
 // return () => {
