@@ -5,9 +5,10 @@
   "name": "1.",
   "LEVEL1": "Ⅰ. 총 칙",
   "LEVEL2": "1. 목적",
+  "desc": "aaaaaaaaa",
   "path": "kics/01-intro",
   "FILE": "01-intro.mdx",
-  "url": "kics/01-intro/01-intro"
+  "url": "/kics/01-intro"
  },
  {
   "id": "1_2_가",
