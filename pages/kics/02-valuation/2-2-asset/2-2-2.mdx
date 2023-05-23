@@ -2,12 +2,12 @@
 title: "II.2-2. 할인율 산출기준"
 ---
 import { Callout,  Collapse, Steps } from 'nextra-theme-docs'
-import {Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel}  from '../../../../components/prime'
+import {Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel, Fieldset}  from '../../../../components/prime'
 import OverlayDemo  from '../../../../components/overlayDemo'
 
 
-<a id="가"></a>
-## 가. 무위험 금리기간구조
+
+## 가. 무위험 금리기간구조 [#가]
 <OverlayDemo id="2_2-3_가" /><OverlayDemo id="2_2-3_다" /><OverlayDemo id="2_2-4_가" />및<OverlayDemo id="2_2-4_나" /> 에서 사용하는 무위험 금리기간구조는 다음의 기준에 따라 산출한다.
 
 
@@ -16,7 +16,7 @@ import OverlayDemo  from '../../../../components/overlayDemo'
 
 ### (2) 외화 무위험 금리기간구조
 외화 무위험 금리기간구조는 감독원장이 제시한 해외통화의 최장만기까지의 무위험금리를 Smith-Wilson 보간법으로 추정한 수익률 곡선을 사용하여 산출한다.
-  1. 감독원장이 제시하지 않은 해외통화의 경우 원화 무위험 금리기간구조를 적용한다. 다만, [**<u>감독원장이 제시하지 않는 해외통화에 대해 보험회사가 자체적으로 산출한 해외통화 무위험 금리기간구조 사용의 적정성을 입증할 경우, 산출기준 및 산출과정 등을 문서화</u>**]()하여 사용할 수 있다.
+  1. 감독원장이 제시하지 않은 해외통화의 경우 원화 무위험 금리기간구조를 적용한다. 다만, 감독원장이 제시하지 않는 해외통화에 대해 보험회사가 자체적으로 산출한 해외통화 무위험 금리기간구조 사용의 적정성을 입증할 경우, 산출기준 및 산출과정 등을 문서화하여 사용할 수 있다.
 
 <Accordion multiple activeIndex={[]}>
 <AccordionTab header="자산평가를 위한 무위험 금리기간구조">
@@ -29,7 +29,7 @@ import OverlayDemo  from '../../../../components/overlayDemo'
 </Accordion>
 
 
-<a id="나"></a>## 나. 위험스프레드
+## 나. 위험스프레드 [#나]
 <OverlayDemo id="2_2-3_가" /><OverlayDemo id="2_2-3_다" /><OverlayDemo id="2_2-4_가" /> **에서 사용하는 위험스프레드는 다음의 기준에 따라 산출한다.**
 
 ### (1) 정의
@@ -38,7 +38,7 @@ import OverlayDemo  from '../../../../components/overlayDemo'
 ### (2) 산출방법
 시장수익률이 없는 자산의 위험스프레드는 거래상대방의 신용등급 및 잔존만기에 해당하는 회사채수익률과 국채수익률의 차이로 계산하며, 다음의 세부 산출방법을 적용한다.
 
-<Card>
+<Fieldset legend = "위험스프레드 세부 산출방법" toggleable>
 
 ① 거래상대방의 신용등급은 <OverlayDemo id="4_5-2_나" />의 K-ICS신용등급 적용기준에 따라 산출한다.
 
@@ -91,7 +91,7 @@ import OverlayDemo  from '../../../../components/overlayDemo'
 </AccordionTab>
 </Accordion>
 
-</Card>
+</Fieldset>
 
 
 ### (3) 시장수익률이 없는 부채의 위험스프레드
