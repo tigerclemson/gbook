@@ -17,11 +17,85 @@ title: Prime Component
 
 ---
 import 'primeicons/primeicons.css'
-import {Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel }  from '../../components/prime'
+import {Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel, Fieldset, Callout, M1, G2Col}  from '../../components/prime'
 import BasicDemo  from '../../components/buttonDemo'
 import DialogDemo  from '../../components/diagDemo'
 import OverlayDemo  from '../../components/overlayDemo'
 import Slides  from '../../components/slides'
+
+import { Message } from 'primereact/message';
+
+
+### primereact message
+<Message severity="info" text="Info Message asdfasdasdfasdfasdfasdfasaas asdfasdfasd a asdfasdfasdfasdfasdfasdfsadfsadfasdfasdf asdfasdfsafasdfsadfasdfsadfsad"/>
+
+Styling info
+
+<Message severity="info" text="Info Message"  style={{
+                    border: 'solid #696cff',
+                    borderWidth: '0 0 0 6px',
+                    width: '100%',
+                    justifyContent: 'left'
+                }}/>
+
+Styling warn
+<Message severity="warn" text="Info Message"  style={{
+                    border: 'solid orange',
+                    borderWidth: '0 0 0 6px',
+                    width: '100%',
+                    justifyContent: 'left'
+                }}/>
+
+
+### Message success
+<M1 severity ="success" text= "AAAasdfasdfasdfasdfas /asdfasdasdfasdfasdfasdfasdfasdfasfasdfasfdasdfsa asdfasdfasdfasdfasdfasdfasdfsadfasdfsadfsadfsadfsadfasdfasdfsadfsadfsadfasdfsafdsadfsad" />
+
+### info
+<M1 severity ="info" icon ='pi pi-spinner' text= "AAA" />
+
+### Callout info success warn error
+
+<Callout severity ="info" >
+  # asdfa
+  ### h3
+  + asdfasd
+  + list2
+    + asdfasdasdfasdfasdfasdfasasdfasdfasdfasdfasdfsadfsadfsadfasdfasdfasfsadfdsa
+    + asdfas
+
+  1. asdfasd
+  2. adsfasd
+</Callout>
+
+### Callout 2 Columns
+
+<G2Col>
+    <Callout severity ="success">
+      # asdfa
+      ### h3
+      + asdfasd
+      + list2
+        + asdfasdasdfasdfasdfasdfasasdfasdfasdfasdfasdfsadfsadfsadfasdfasdfasfsadfdsa
+        + asdfas
+
+      1. asdfasd
+      2. adsfasd
+    </Callout>
+    <Callout severity ="info">
+      # asdfasdasd
+      ### h3
+      + asdfasd
+      + list2
+        + asdfasdasdfasdfasdfasdfasasdfasdfasdfasdfasdfasdfasdfasdfsadfsadf
+        + asdfas
+
+    asdfasdfasdfasdfasdfasdfsadfsadfasdfasdf
+    asdfasdfasd
+
+      1. asdfasd
+      2. adsfasd
+    </Callout>
+</G2Col>
 
 
 
@@ -101,7 +175,7 @@ aasdfasdadfa
 
 ## Slide Embed
 
-<Slides title ="GMV" src="https://slides.com/javafinance/deck-8d8cf1/embed" width= "800" height="600"/>
+<Slides title ="GMV" src="https://slides.com/javafinance/deck-8d8cf1/embed" width= "300" height="200"/>
 
 xfun::embed_file('/aaaa.pdf')
 
