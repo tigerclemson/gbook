@@ -1,8 +1,8 @@
 ---
 title: "III.2. 계층화"
 ---
-import { Callout,  Collapse, Steps } from 'nextra-theme-docs'
-import {Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel, Fieldset}  from '../../../components/prime'
+
+import {Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel, Fieldset,  Callout, M1, G2Col}  from '../../../components/prime'
 import OverlayDemo  from '../../../components/overlayDemo'
 
 
@@ -126,12 +126,14 @@ K-ICS는 보험감독회계기준(SAP)과 평가방법이 일부 다르므로* �
 
 <Fieldset legend="① 해약환급금 부족분 상당액 "  >
 
-= Max[ \{해약환급금$^{1)}$–(현행추정부채 중 보험료부채+위험마진)
-\+ (보험계약대출 시가평가액$^{2)}$ -보험계약 해지 시 상환대상 보험계약대출 잔액)
-\+ (재보험자산 중 출재보험료부채 시가평가액$^{3)}$ -보험계약 해지 시 회수대상 재보험자산 가액)\}, 0]
+<Callout severity ="info" >
+해약환급금 부족분 상당액 $= Max[ \{$해약환급금$^{*1}$ – ( 현행추정부채 중 보험료부채 + 위험마진)
+\+ (보험계약대출 시가평가액$^{*2}$ - 보험계약 해지 시 상환대상 보험계약대출 잔액)
+\+ (재보험자산 중 출재보험료부채 시가평가액$^{*3}$ - 보험계약 해지 시 회수대상 재보험자산 가액) $\}, 0]$
+</Callout>
 
 ```
-= Max[ {해약환급금* –(현행추정부채 중 보험료부채+위험마진)
+해약환급금 부족분 상당액 = Max[ {해약환급금* –(현행추정부채 중 보험료부채+위험마진)
 + (보험계약대출 시가평가액**  -보험계약 해지 시 상환대상 보험계약대출 잔액)
 + (재보험자산 중 출재보험료부채 시가평가액*** -보험계약 해지 시 회수대상 재보험자산 가액)}, 0]
 ```
@@ -196,9 +198,10 @@ K-ICS는 보험감독회계기준(SAP)과 평가방법이 일부 다르므로* �
 - ③ 해약환급금 부족분 상당액 중 해약환급금준비금 상당액 초과분은 다음과 같이 산출한다.
 <Fieldset legend=" ③ 해약환급금 부족분 상당액 중 해약환급금준비금 상당액 초과분 "  >
 
-```
-= max{(해약환급금 부족분 상당액 – 해약환급금준비금 상당액) × (1-이연법인세율*)), 0}
-```
+<Callout severity = "info">
+= $max\{$(해약환급금 부족분 상당액 – 해약환급금준비금 상당액) × (1-이연법인세율*))$, 0\}$
+</Callout>
+
 - 이연법인세율 : <OverlayDemo id="2_2-3_바"/>를 산출할 때 적용한 이연법인세율
 
 </Fieldset>

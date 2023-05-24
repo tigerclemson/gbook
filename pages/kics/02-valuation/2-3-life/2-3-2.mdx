@@ -2,9 +2,9 @@
 title: "II.3-2. 현행추정부채"
 ---
 
-import { Callout,  Collapse, Steps } from 'nextra-theme-docs'
-import {Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel, Fieldset}  from '../../../../components/prime'
+import {Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel, Fieldset, Callout, M1, G2Col}  from '../../../../components/prime'
 import OverlayDemo  from '../../../../components/overlayDemo'
+import { Message } from 'primereact/message';
 
 ## 가. 원칙 [#가]
 
@@ -165,6 +165,20 @@ K-ICS는 K-IFRS와 일부 산출방식의 차이로 공동재보험 계약 체�
 
 
 ### (5) 계리적 가정
+
+<Callout severity ="warn" >
+##### K-ICS 계리적 가정의 기본방향
+###### (원칙중심 전환)
+- 현행 감독회계 계리적 가정 산출기준 중 보험사 특성을 반영함에 한계로 작용하는 요소$^{1)}$ 를 제거
+- → 보험회사가 통계요건 및 산출방법을 보험사의 특성에 가장 부합되는 방향으로 결정하여 가정을 산출토록 유도
+
+$^{1)}$ <sub>통계요건 : 최근 5년이상 경험통계에 기반하여 가정 산출 / 세부 산출방법 : 위험률은 위험보험료 대비 실제지급금 비율로 산출</sub>
+
+###### (산출원칙 강화)
+- 기존 LAT 계리적 가정 산출기준에 포함된 원칙 중 정의 및 적용방식이 불명확한 부분을 제거하고, 해외사례를 참고하여 원칙을 보다 명확하게 표현하는 한편 회사별 비교가능성 제고를 위해 필요한 원칙 보강
+</Callout>
+
+
 
 <Fieldset legend = "K-ICS 계리적 가정의 기본방향" toggleable>
 
@@ -659,6 +673,13 @@ $^{1)}$ <sub>회귀분석, 일정기간의 평균잔액비율, 사업방법서�
 - ᄂ. 보험회사에 보고되지 않았으나 이미 발생한 보험사고에 대한 보험금
 - ᄃ. 보험사고를 조사·진행·해결하는데 수반하는 비용 등 장래손해조사비
   - a. 장래손해조사비는 보험회사의 경험통계를 활용하여 현금흐름을 기반으로 산출하는 것이 원칙이나, 적용이 어려운 경우 다음에서 정한 방법을 적용할 수 있다.
+
+> <M1 severity ="success" text= "장래손해조사비 = (개별추산액×50%+미보고발생손해액×100%)×손해조사비율)" />
+
+> <Callout severity ="success" >
+> 장래손해조사비 = (개별추산액×$50\%$+미보고발생손해액×$100\%$)×손해조사비율)
+> </Callout>
+
 
 > 장래손해조사비 = (개별추산액×50%+미보고발생손해액×100%)×손해조사비율)
 > - 개별추산액:기보고 발생사고에 대한 추산보험금
