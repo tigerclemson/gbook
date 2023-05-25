@@ -8,7 +8,7 @@ export default function Slides(prop) {
             <iframe src={prop.src} 
                 width={prop.width} 
                 height={prop.height} 
-                title={prop.title} scrolling="no" frameborder="0" >
+                title={prop.title} scrolling="no" frameBorder="0" >
 
             </iframe>
         </>

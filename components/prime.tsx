@@ -47,7 +47,8 @@ const M1 = (props) => {
                     // border: 'solid #696cff',
                     // borderWidth: '0 0 0 6px',
                     borderWidth: borderWidth,
-                    justifyContent: 'left',
+                    // justifyContent: 'left',
+                    display: 'block',
                     width : width
                 }}
                 // className="border-primary w-full justify-content-start"
