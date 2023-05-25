@@ -1,9 +1,12 @@
 
 import React, { Children } from 'react';
-// import "primereact/resources/themes/bootstrap4-light-blue/theme.css";
-import "primereact/resources/themes/lara-light-indigo/theme.css";
+// import 'primereact/resources/themes/bootstrap4-light-blue/theme.css';
+import 'primereact/resources/themes/lara-light-indigo/theme6.css';
 // import "./theme.module.scss";
-import "primereact/resources/primereact.min.css";
+// import '../styles/goftheme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeflex/primeflex.css';
+import 'primeicons/primeicons.css';
 import { Button } from 'primereact/button';
 import { Accordion, AccordionTab } from 'primereact/accordion';
 import { Card } from 'primereact/card';
@@ -13,8 +16,6 @@ import { TabView, TabPanel } from 'primereact/tabview';
 import { Panel } from 'primereact/panel';
 import { Fieldset  } from 'primereact/fieldset';
 import { Message } from 'primereact/message';
-import "primeflex/primeflex.css";
-import 'primeicons/primeicons.css';
 
 import { PrimeIcons } from 'primereact/api';
 

@@ -19,9 +19,9 @@ const config: DocsThemeConfig = {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="og:title" content="Nextra" />
       <meta property="og:description" content="The next site builder" />
-      <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css" />
+      {/* <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css" />
       <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/arya-blue.css" />
-      <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/vela-blue.css" />
+      <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/vela-blue.css" /> */}
 
     </>
   ),
