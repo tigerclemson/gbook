@@ -67,15 +67,15 @@ const Callout = (props) => {
         </div>
     );
 
-    const { severity= 'info' , width='100%', height='-webkit-fill-available',  borderWidth='0 0 0 6px'} = props;
-
+    // const { severity= 'info' , width='100%', height='-webkit-fill-available',  borderWidth='0 0 0 6px'} = props;
+const { severity= 'info' , width='100%',  borderWidth='0 0 0 6px'} = props;
     return (
                 <Message
                 style={{
                     borderWidth: borderWidth,
                     justifyContent: 'left',
                     width : width,
-                    height: height,
+                    // height: height,
                     alignItems:'start'
                 }}
                 // className="border-primary w-full justify-content-start"
