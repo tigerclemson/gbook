@@ -1,8 +1,7 @@
 ---
 title: "III.1. 개 요"
 ---
-import { Callout,  Collapse, Steps } from 'nextra-theme-docs'
-import {Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel}  from '../../../components/prime'
+import {Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel,  Callout, M1, G2Col}  from '../../../components/prime'
 import OverlayDemo  from '../../../components/overlayDemo'
 
 
@@ -98,15 +97,15 @@ import OverlayDemo  from '../../../components/overlayDemo'
   - ① 종속회사 지급여력기준금액의 비지배지분 상응액은 다음과 같이 산출한다.
     - ᄀ. 종속회사 지급여력기준금액을 건전성감독기준 재무상태표에 따라 산출하는 경우 다음의 산식에 따라 계산한다.
 
-    <Card>
-      $\dfrac{지급여력기준금액_{그룹}}{\sum_i^n 지급여력기준금액_{t지배,종속회사}} \times$ 종속회사 지급여력기준금액$_t$ $\times$ 비지배지분율
-    </Card>
+<Callout severity ="info" >
+      $\frac{지급여력기준금액_{그룹}}{\sum_i^n 지급여력기준금액_{t지배,종속회사}} \times$ 종속회사 지급여력기준금액$_t$ $\times$ 비지배지분율
+</Callout>
 
     - ᄂ. 종속회사 지급여력기준금액을<OverlayDemo id="4_1-8"/>의 \<표4>에서 정한 기준에 따라 업권별 자본 규제를 활용하거나 요구자본 대용치(총자산×8%)를 적용하여 산출하는 경우 다음의 계산식에 따라 계산한다.
 
-    <Card>
+<Callout severity ="info" >
     \{(업권별 요구자본 × 환산율) 또는 (총자산×8%)}×비지배지분율
-    </Card>
+</Callout>
 
 <Accordion multiple activeIndex={[]}>
 <AccordionTab header="비지배지분 중 종속회사 지급여력기준금액의 비지배지분 상응액을 초과하는 금액은 가용자본으로 인정하지 않는 이유">
