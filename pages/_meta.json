@@ -11,6 +11,9 @@
   ,"notice": {
      "title": "Notices"
     ,"type": "page"
+    , "theme": {
+      "typesetting": "article"
+    }
   }
 
   ,"ifrs": {
@@ -38,8 +41,9 @@
         "href": "/ifrs/01"
       },
       "kics": {
-        "title": "KICS ↗",
-        "href": "/kics/aaa"
+        "title": "KICS↗",
+        "href": "/kics/intro"
+        ,"newWindow": true
       },
       "gmv": {
         "title": "GMV",

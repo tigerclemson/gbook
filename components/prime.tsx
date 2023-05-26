@@ -1,11 +1,8 @@
 
 import React, { Children } from 'react';
 // import 'primereact/resources/themes/bootstrap4-light-blue/theme.css';
-<<<<<<< HEAD
+
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
-=======
-import 'primereact/resources/themes/lara-light-indigo/theme1.css';
->>>>>>> 8f433fa4ce65535e8183d6de0cd1fc39e75789e7
 // import "./theme.module.scss";
 // import '../styles/goftheme.css';
 import 'primereact/resources/primereact.min.css';
@@ -134,9 +131,4 @@ const { fontSize= '0.8rem' , width='100%',  borderWidth='0 0 0 6px'} = props;
 
     )
 }
-
-<<<<<<< HEAD
-export { Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel, Fieldset, Callout, M1, G2Col, GSheet};
-=======
-export { Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel, Fieldset, Callout, M1, G2Col, Math};
->>>>>>> 8f433fa4ce65535e8183d6de0cd1fc39e75789e7
+export { Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel, Fieldset, Callout, M1, G2Col, GSheet, Math};
