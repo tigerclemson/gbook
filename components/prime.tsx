@@ -1,7 +1,11 @@
 
 import React, { Children } from 'react';
 // import 'primereact/resources/themes/bootstrap4-light-blue/theme.css';
+<<<<<<< HEAD
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
+=======
+import 'primereact/resources/themes/lara-light-indigo/theme1.css';
+>>>>>>> 8f433fa4ce65535e8183d6de0cd1fc39e75789e7
 // import "./theme.module.scss";
 // import '../styles/goftheme.css';
 import 'primereact/resources/primereact.min.css';
@@ -43,15 +47,15 @@ const G2Col = (props) => {
 }
 
 // const M2 = function TemplateDemo({prop, children}) {
-const M1 = (props) => {    
-    
+const M1 = (props) => {
+
     const { severity= 'info' , width='100%', borderWidth='0 0 0 6px', icon='pi pi-cog', text} = props;
-      
+
     const content = (
         <div  >
             {/* <i className={icon} style= {{paddingRight: '5px'}}></i> */}
             {/* <span className={icon} style= {{ fontSize: '1rem' , paddingRight: '10px'}}></span> */}
-            
+
             {props.text}
         </div>
     );
@@ -74,7 +78,7 @@ const M1 = (props) => {
     )
 }
 
-const Callout = (props) => {    
+const Callout = (props) => {
     const content = (
         <div style={{width:'100%'}} >
             {props.children}
@@ -98,9 +102,41 @@ const { severity= 'info' , width='100%',  borderWidth='0 0 0 6px'} = props;
                 content={content}
                 >
                 </Message>
-           
+
     )
 }
 
+const Math = (props) => {
+    const content = (
+        <div style={{width:'100%'}} >
+            {props.children}
+        </div>
+    );
 
+    // const { severity= 'info' , width='100%', height='-webkit-fill-available',  borderWidth='0 0 0 6px'} = props;
+const { fontSize= '0.8rem' , width='100%',  borderWidth='0 0 0 6px'} = props;
+    return (
+                <Message
+                style={{
+                    borderWidth: borderWidth,
+                    justifyContent: 'left',
+                    width : width,
+                    // height: height,
+                    alignItems:'start',
+                    fontSize :fontSize
+                }}
+                // className="border-primary w-full justify-content-start"
+                severity={'success'}
+                // icon= { PrimeIcons.PLUS}
+                content={content}
+                >
+                </Message>
+
+    )
+}
+
+<<<<<<< HEAD
 export { Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel, Fieldset, Callout, M1, G2Col, GSheet};
+=======
+export { Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel, Fieldset, Callout, M1, G2Col, Math};
+>>>>>>> 8f433fa4ce65535e8183d6de0cd1fc39e75789e7
