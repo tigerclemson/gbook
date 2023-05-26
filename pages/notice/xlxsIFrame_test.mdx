@@ -1,0 +1,53 @@
+---
+title: xlxs IFrame test
+layout: full
+---
+import 'primeicons/primeicons.css'
+import {Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel, Fieldset, Callout, M1, G2Col, GSheet}  from '../../components/prime'
+import BasicDemo  from '../../components/buttonDemo'
+import DialogDemo  from '../../components/diagDemo'
+import OverlayDemo  from '../../components/overlayDemo'
+import Slides  from '../../components/slides'
+import { Message } from 'primereact/message';
+
+
+
+### one drive 엑셀 게시
+
+<iframe width="100%" height="700" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=AB5F66CE0CF8D024%2113427&authkey=%21AAqrgqIOOYku5q0&em=2&AllowTyping=True&Item=%EA%B0%80%EC%9A%A9%EC%9E%90%EB%B3%B8!A1:G53&wdHideGridlines=False&wdDownloadButton=False&wdInConfigurator=False&wdInConfigurator=False&edesNext=false&resen=false&ed1JS=false">
+</iframe>
+
+
+### 비교
+<G2Col>
+<Callout severity ="success">
+### one drive
+- 엑셀 파일에서 틀고정 유지 기능
+- 영역지정 : `Item=시트명!범위`   ex.`Item=%EA%B0%80%EC%9A%A9%EC%9E%90%EB%B3%B8!B1:G53`
+- 옵션
+  - 파일 다운로드 : `wdDownloadButton =True/ False`
+  - 데이터 입력여부 : `AllowTyping=True/ False`
+</Callout>
+<Callout severity ="error">
+### google drive
+  - 엑셀 파일에서 틀고정 유지 불가
+- 영역지정 : `range=B2:E16`
+- 옵션
+  - 파일 다운로드 옵션?
+  - 데이터 입력 불가
+</Callout>
+
+</G2Col>
+
+### google drive 엑셀 게시
+=> 스프에드 시트 읽어오는 것과 동일함.
+<iframe
+width="100%"
+height="600"
+src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR_iD-7cwQZDfrQnvHgL6TJts3OWZ7nzbTp9XYMHHouFHPIbqIssj6tKgXdG-SdHw/pubhtml?
+gid=445074999&amp;
+single=true&amp;
+range=B2:E16&amp;
+widget=true&amp;
+headers=false">
+</iframe>
