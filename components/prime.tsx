@@ -1,7 +1,7 @@
 
 import React, { Children } from 'react';
 // import 'primereact/resources/themes/bootstrap4-light-blue/theme.css';
-import 'primereact/resources/themes/lara-light-indigo/theme6.css';
+import 'primereact/resources/themes/lara-light-indigo/theme.css';
 // import "./theme.module.scss";
 // import '../styles/goftheme.css';
 import 'primereact/resources/primereact.min.css';
@@ -18,6 +18,19 @@ import { Fieldset  } from 'primereact/fieldset';
 import { Message } from 'primereact/message';
 
 import { PrimeIcons } from 'primereact/api';
+
+
+
+const GSheet = (props) => {
+    const { height= 'min-h-screen', title } = props;
+
+    const children = props.children;
+    return (
+        <Card className={height} title={title}>
+            {children}
+        </Card>
+    );
+}
 
 const G2Col = (props) => {
     const children = props.children;
@@ -90,4 +103,4 @@ const { severity= 'info' , width='100%',  borderWidth='0 0 0 6px'} = props;
 }
 
 
-export { Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel, Fieldset, Callout, M1, G2Col};
+export { Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel, Fieldset, Callout, M1, G2Col, GSheet};
