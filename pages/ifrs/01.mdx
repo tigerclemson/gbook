@@ -3,9 +3,9 @@ title: 1. 개요
 description: Introduction
 ---
 
-import { Callout, Steps } from 'nextra-theme-docs'
-import {Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel}  from '../../components/prime'
-
+import { Steps } from 'nextra-theme-docs'
+import {Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel, Callout}  from '../../components/prime'
+import Image from 'next/image'
 
 # 1.개요
 
@@ -26,7 +26,7 @@ IFRS 17 ‘보험계약’은 보험계약의 인식, 측정, 표시 및 공시�
 * 3장 [_**최초인식 및 측정**_](3./) : 보험계약집합의 최초인식시점 및 측정방법에 대해 기술함.
 * 4장 [_**후속측정**_](4./) : 보고기간 말 보험계약부채를 구성하는 잔여보장부채, 발생사고부채, RA, CSM, 및 손실요소의 회계처리 방법에 기술함.&#x20;
 * 5장 [_**보험료배분접근법**_](5./) : 적용조건, 최초 및 후속측정방법에 대해 기술함.
-* 6장[ _**변동수수료접근법**_](6./) : 적용조건, 최초 및 후속측정방법에 대해 기술함
+* 6장 [ _**변동수수료접근법**_](6./) : 적용조건, 최초 및 후속측정방법에 대해 기술함
 * 7장 [_**출재보험계약**_ ](7./)   : 적용조건, 통합수준, 최초측정 및 후속측정방법에 대해 기술함
 * 8장 [_**표시 및 공시**_](8/)     : 재무제표 표시방법과 주석 공시사항에 대해 기술함.
 </Card>
@@ -34,17 +34,17 @@ IFRS 17 ‘보험계약’은 보험계약의 인식, 측정, 표시 및 공시�
 
 ## 구분
 
-<Callout  emoji="">
-기준서
+<Callout severity="success">
+**기준서**
 </Callout>
 
-<Callout type="warning" emoji="">
-이슈사항
+<Callout severity="error">
+**이슈사항**
 </Callout>
 
 
-<Callout type="info" emoji="">
-이슈사항에 대한 제안
+<Callout severity="info">
+**이슈사항에 대한 제안**
 </Callout>
 
 
@@ -54,14 +54,23 @@ IFRS 17 ‘보험계약’은 보험계약의 인식, 측정, 표시 및 공시�
 
 다음 그림은 기준서에 따라 구성한 IFRS 17 프로세스이며, 계약관리, 최초인식 및 측정, 후속측정 및 변동분석, 표시 및 공시의 순으로 이루어짐.
 
-* 계약관리\
+<Card  style={{ backgroundColor: 'var(--bluegray-50)'}}>
+* **계약관리**\
   : IFRS 17 적용범위 선정, 보험계약 통합수준 정의 및 회계모형 결정
-* 최초인식 및 측정\
+* **최초인식 및 측정**\
   : 보험계약의 최초인식시점 및 최초측정 수행
-* 후속측정 및 변동분석\
+* **후속측정 및 변동분석**\
   : 기말시점 측정 및 기시부터 기말까지의 차이에 대한 변동분석 수행
-* 표시 및 공시\
+* **표시 및 공시**\
   : 재무제표 및 주석공시사항 작성
+</Card>
 
+---
+<center>
+<Image src="/pic1-1.png" width={1000} height={100} />
+</center>
 
-![IFRS 17 프로세스](/pic1-1.png)
+<center>
+[IFRS 17 프로세스]
+</center>
+---
