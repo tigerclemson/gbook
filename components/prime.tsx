@@ -2,7 +2,7 @@
 import React, { Children } from 'react';
 // import 'primereact/resources/themes/bootstrap4-light-blue/theme.css';
 // import 'primereact/resources/themes/lara-light-indigo/theme.css';
-import 'primereact/resources/themes/lara-light-indigo/theme7.css';
+import 'primereact/resources/themes/lara-light-indigo/theme.css';
 // import "./theme.module.scss";
 // import '../styles/goftheme.css';
 import 'primereact/resources/primereact.min.css';
@@ -132,4 +132,4 @@ const { fontSize= '0.8rem' , width='100%',  borderWidth='0 0 0 6px'} = props;
     )
 }
 
-export { Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel, Fieldset, Callout, M1, G2Col, GSheet};
+export { Button, Accordion, AccordionTab, Card, Panel, TabView, TabPanel, OverlayPanel, Fieldset, Callout, M1, G2Col, GSheet, Math};
